@@ -1,8 +1,18 @@
 ﻿<div>
-    <h1>{{pageHeader}}</h1>
+    <!--<h1>{{pageHeader}}</h1>-->
+    <span [innerHTML]='pageHeader'></span>
     <h3>{{firstName?firstName:"first name not specified"}}</h3>
     <my-employee></my-employee>
     <img src="{{imagePath}}" />
     <h2>FullName:{{getFullName()}}</h2>
-    
+    <button [disabled]='isDisabled'>Click me</button>
+    <button bind-disabled='isDisabled'>Click me</button>
+    <br />
+    <!--the way we can bind bad code here..-->
+    <div [innerHtml]="badHtml"></div>
+    <!--HTML attributes and the DOM properties are different things.
+    Angular binding works with properties and events, and not attributes.
+    The role of attributes is to initialize element properties and their job is done.-->
+    <input id='inputId' type='text' value='Tom'>
+
 </div>
