@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular2", "Angular2\Angular2.csproj", "{EB9A3FE1-F142-44EC-BBD2-38964D571CB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeService", "EmployeeService\EmployeeService.csproj", "{B5CE38B6-72E3-4A09-BE33-5E4427057EAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EB9A3FE1-F142-44EC-BBD2-38964D571CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB9A3FE1-F142-44EC-BBD2-38964D571CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB9A3FE1-F142-44EC-BBD2-38964D571CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CE38B6-72E3-4A09-BE33-5E4427057EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CE38B6-72E3-4A09-BE33-5E4427057EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CE38B6-72E3-4A09-BE33-5E4427057EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CE38B6-72E3-4A09-BE33-5E4427057EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

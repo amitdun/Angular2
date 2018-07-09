@@ -1,28 +1,38 @@
-﻿<table>
+﻿<table *ngIf="employee">
     <thead>
         <tr>
-            <!--<th attr.colspan="{{columnSpan}}">-->
-            <th [attr.colspan]="columnSpan">
+            <th colspan="2">
                 Employee Details
             </th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>First Name</td>
-            <td>{{firstName}}</td>
+            <td>Employee Code</td>
+            <td>{{employee.code}}</td>
         </tr>
         <tr>
-            <td>Last Name</td>
-            <td>{{lastName}}</td>
+            <td>Name</td>
+            <td>{{employee.name}}</td>
         </tr>
         <tr>
             <td>Gender</td>
-            <td>{{gender}}</td>
+            <td>{{employee.gender}}</td>
         </tr>
         <tr>
-            <td>Age</td>
-            <td>{{age}}</td>
+            <td>Annual Salary</td>
+            <td>{{employee.annualSalary}}</td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td>{{employee.dateOfBirth}}</td>
         </tr>
     </tbody>
 </table>
+<div *ngIf="!employee">
+    {{statusMessage}}
+</div>
+<div style="margin-top:5px">
+    <input type="button" class="btn btn-primary" value="Back to Employees List"
+           (click)="onBackButtonClick()" />
+</div>

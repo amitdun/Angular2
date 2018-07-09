@@ -1,18 +1,36 @@
-﻿<div>
-    <!--<h1>{{pageHeader}}</h1>-->
-    <span [innerHTML]='pageHeader'></span>
-    <h3>{{firstName?firstName:"first name not specified"}}</h3>
-    <my-employee></my-employee>
-    <img src="{{imagePath}}" />
-    <h2>FullName:{{getFullName()}}</h2>
-    <button [disabled]='isDisabled'>Click me</button>
-    <button bind-disabled='isDisabled'>Click me</button>
+﻿<div style="padding:5px">
+    <ul class="nav nav-tabs">
+        <li routerLinkActive="active">
+            <a routerLink="home">Home</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="employees">Employees</a>
+        </li>
+    </ul>
     <br />
-    <!--the way we can bind bad code here..-->
-    <div [innerHtml]="badHtml"></div>
-    <!--HTML attributes and the DOM properties are different things.
-    Angular binding works with properties and events, and not attributes.
-    The role of attributes is to initialize element properties and their job is done.-->
-    <input id='inputId' type='text' value='Tom'>
-
+    <router-outlet></router-outlet>
 </div>
+<!--<h1>{{pageHeader}}</h1>-->
+<!--<span [innerHTML]='pageHeader'></span>
+<h3>{{firstName?firstName:"first name not specified"}}</h3>
+<my-employee></my-employee>
+<img src="{{imagePath}}" />
+<h2>FullName:{{getFullName()}}</h2>
+<button [disabled]='isDisabled'>Click me</button>
+<button bind-disabled='isDisabled'>Click me</button>
+<br />-->
+<!--the way we can bind bad code here..-->
+<!--<div [innerHtml]="badHtml"></div>-->
+<!--HTML attributes and the DOM properties are different things.
+Angular binding works with properties and events, and not attributes.
+The role of attributes is to initialize element properties and their job is done.-->
+<!--<input id='inputId' type='text' value='Tom'>
+<br />
+<hr />
+Your Text : <input type='text' [(ngModel)]='userText' />
+<br /><br />
+<simple [simpleInput]='userText'></simple>
+<hr />
+
+<h1>Employee List</h1>
+<list-employee></list-employee>-->
