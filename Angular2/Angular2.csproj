@@ -70,6 +70,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\employee\employee.component.css" />
+    <Content Include="src\app\employee\employee.component.html" />
+    <Content Include="src\app\employee\employeeCount.component.css" />
+    <Content Include="src\app\employee\employeeCount.component.html" />
+    <Content Include="src\app\employee\employeeList.component.css" />
+    <Content Include="src\app\employee\employeeList.component.html" />
+    <Content Include="src\app\home\home.component.js" />
+    <Content Include="src\app\Others\pageNotFound.component.js" />
+    <Content Include="src\app\Others\SimpleComponent.js" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -88,6 +98,9 @@
     <None Include="packages.config" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
+    <Content Include="src\app\home\home.component.js.map" />
+    <Content Include="src\app\Others\pageNotFound.component.js.map" />
+    <Content Include="src\app\Others\SimpleComponent.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -99,11 +112,21 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\employee\employee.component.ts" />
+    <TypeScriptCompile Include="src\app\employee\employee.service.ts" />
+    <TypeScriptCompile Include="src\app\employee\employee.ts" />
+    <TypeScriptCompile Include="src\app\employee\EmployeeCountComponent.ts" />
+    <TypeScriptCompile Include="src\app\employee\employeeList.component.ts" />
+    <TypeScriptCompile Include="src\app\employee\employeeTitle.pipe.ts" />
+    <TypeScriptCompile Include="src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\Others\pageNotFound.component.ts" />
+    <TypeScriptCompile Include="src\app\Others\SimpleComponent.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
